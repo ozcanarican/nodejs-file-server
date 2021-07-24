@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NODE SERVER</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+  <div class="header"><a href="/">NODE DOSYA YÜKLEYİCİ</a></div>
+  <div class="main">
+  <div class="bilgi" style="display: none">
+  </div>
+   <div class="form-container">
+   <h1>DOSYA GÖNDER</h1>
+   <small>Birden fazla dosya seçebilirsiniz</small>
+    <form method="post" action="/upload" enctype="multipart/form-data" id="form">
+          <input type="file" name="dosya" id="dosya" multiple>
+          <div class="tuslar">
+            <button type="button" id="sec">DOSYA SEÇ</button>
+          </div>
+      </form>
+    </div>
+  </div>
+  <div class="footer"></div>
+  <script src="main.js"></script>
+</body>
+</html>

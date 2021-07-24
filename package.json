@@ -1,0 +1,17 @@
+{
+  "name": "node-file-server",
+  "version": "1.0.0",
+  "description": "A server to receive files from mobile apps",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Özcan ARICAN",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-fileupload": "^1.2.1",
+    "ip": "^1.1.5",
+    "qrcode-terminal": "^0.12.0"
+  }
+}
