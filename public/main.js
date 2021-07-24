@@ -14,10 +14,10 @@ files.addEventListener("change", (e) => {
     container.innerHTML = "<h1>Yükleniyor</h1>Lütfen Bekleyiniz..."
 })
 
+//web urlsini kontrol edip, adet değişkenin olup olmadığına bakıyoruz
 var params = new URLSearchParams(window.location.search);
-for (let p of params) {
-    console.log(p);
-}
+
+//eğer varsa, adet verisini alarak, .bilgi divine basıyoruz
 if (params.has("adet")) {
     const adet = params.get("adet")
     const bilgi = document.querySelector(".bilgi")
